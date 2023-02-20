@@ -1,6 +1,6 @@
 # NorthEast SouthWest Cipher
 This is a command line tool implementing a hand cipher which I have invented.
-The cipher bears some similarities to both the Playfair and Vigenère Cipher
+The cipher bears some similarities with both the Playfair and Vigenère ciphers.
 
 Enciphering a message with this cipher consists of finding each letter of the
 plaintext in a 5x5 square containing the alphabet and writing in the ciphertext
