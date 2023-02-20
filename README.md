@@ -149,10 +149,10 @@ you can pipe the output of other programs into this tool and vice versa.
 
 Notice how case, whitespace, and punctuation are preserved. As these are things
 that may reveal information about the content of a message, it is a good idea to
-only use letters, and only use spaces to sparate the message in groups of a
-fixed length instead of separating words (i.e. "thequ ickbr ownfo xjump sover
-thela zydog), which is common practice with hand ciphers. Numbers are also not
-enciphered, so avoid them as well.
+only use lowecase letters, and only use spaces to sparate the message in groups
+of a fixed length instead of separating words (i.e. "thequ ickbr ownfo xjump
+sover thela zydog), which is common practice with hand ciphers. Numbers are also
+not enciphered, so avoid them as well.
 
 These examples should be enough to demonstrate how all of the available command
 line flags can be used.
