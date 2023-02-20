@@ -73,7 +73,7 @@ options:
                   clockwise rotation)
 ```
 
-## Examples
+### Examples
 
 Encipher a message with default options, then decipher by running the script on
 the resulting ciphertext but starting from South, which is opposite the default
