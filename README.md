@@ -43,7 +43,7 @@ whatever reason.
 
 To run the program you must have Python 3.x installed, then you should be able
 to open a terminal/command prompt in the same folder as the script and type
-```python nesw_cipher.py -h``` or ```./nesw_cipher.py``` (on Linux, you should
+```python nesw_cipher.py -h``` or ```./nesw_cipher.py -h``` (on Linux, you should
 make the script executable first with ```chmod +x nesw_cipher.py```), press
 Enter, and get the following message explaining all of the available command
 line parameters:
