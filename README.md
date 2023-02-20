@@ -34,7 +34,7 @@ only that, this is a rewrite from scratch of the script I made back then,
 meaning not even I have ever used this tool apart from testing it. Make of that
 what you will.
 
-That said, I made a point of documenting the code as well as I could, plus
+That said, I made a point of documenting the code the best I could, as well as
 giving detailed information on how to use this tool on the command line, in case
 anyone (including myself) wants to use this at some point in the future... for
 whatever reason.
