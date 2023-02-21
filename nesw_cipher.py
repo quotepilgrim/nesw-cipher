@@ -314,10 +314,10 @@ def main():
                         type=int, default=ROTATION,
                         choices=range(1, len(DIRECTIONS)//2+1),
                         help="change the size of the steps used for rotation;"
-                             " choose one of %(choices)s "
-                             "(default: %(default)s)")
+                             " choose one of %(choices)s"
+                             " (default: %(default)s)")
     parser.add_argument("-w", dest="widdershins", action="store_true",
-                        help="use widdershins rotation to encipher message"
+                        help="use widdershins rotation to encipher message "
                              "(default: clockwise rotation)")
 
     args = parser.parse_args()
