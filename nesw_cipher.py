@@ -53,15 +53,10 @@ def validate_keyword(keyword):
         ValueError: if keyword has characters which are not letters.
     """
 
-    valid = True
     for char in keyword:
         if char.lower() not in LETTERS:
-            valid = False
-            break
-
-    if not valid:
-        raise ValueError("argument passed to 'keyword' must contain only "
-                         "letters")
+            raise ValueError("argument passed to 'keyword' must contain only "
+                             "letters")
     return keyword
 
 
