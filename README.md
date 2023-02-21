@@ -97,7 +97,7 @@ $ ./nesw_cipher.py -m "drscf kxakp lndrs abh flnh" -ds -knortheast
 lorem ipsum dolor sit amet
 ```
 
-Start from East and use widdershins (couterclockwise) rotation, then decipher
+Start from East and use widdershins (counterclockwise) rotation, then decipher
 by starting from West using the same rotation used to encipher:
 
 (notice the effect of "J" being omitted from the alphabet)
