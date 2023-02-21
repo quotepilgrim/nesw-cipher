@@ -119,7 +119,7 @@ def validate_rotation(rotation):
              abs(rotation) <= limit)
     if not valid:
         raise ValueError("Parameter 'rotation' expects argument to be a "
-                         "non-zero integer from {-limit} to {limit} "
+                         f"non-zero integer from {-limit} to {limit} "
                          f"(received: '{type(rotation).__name__}': "
                          f"{rotation} )")
     return rotation
@@ -191,16 +191,18 @@ def encipher(plaintext, keyword="", replacement=REPLACEMENT,
     """Enciphers a plaintext message using the NorthEast SouthWest Cipher.
 
     Parameters:
-        plaintext: the plaintext message to be enciphered.
-        keyword: a keyword used to reorder the letters of the alphabet.
-        replacement: a pair of letters, where the second one replaces the first
+        plaintext: the plaintext message to be enciphered. keyword: a keyword
+        used to reorder the letters of the alphabet. replacement: a pair of
+        letters, where the second one replaces the first
                      in the plaintext. A valid replacement consists of exactly
                      two unique letters.
         direction: the direction from which to start applying the cipher. Valid
                    choices are any of the values in the 'DIRECTIONS' list.
         rotation: the number of rotation steps used to change direction after
-                  each letter. Can be any non-zero integer. Positive values are
-                  clockwise steps, negative values are widdershins steps.
+                  each letter. Should be a non-zero integer with absolute value
+                  smaller than half the size of the 'DIRECTIONS' list. Positive
+                  values are clockwise steps, negative values are widdershins
+                  steps.
 
     Returns:
         The resulting ciphertext.
