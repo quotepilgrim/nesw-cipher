@@ -191,9 +191,9 @@ def encipher(plaintext, keyword="", replacement=REPLACEMENT,
     """Enciphers a plaintext message using the NorthEast SouthWest Cipher.
 
     Parameters:
-        plaintext: the plaintext message to be enciphered. keyword: a keyword
-        used to reorder the letters of the alphabet. replacement: a pair of
-        letters, where the second one replaces the first
+        plaintext: the plaintext message to be enciphered.
+        keyword: a keyword used to reorder the letters of the alphabet.
+        replacement: a pair of letters, where the second one replaces the first
                      in the plaintext. A valid replacement consists of exactly
                      two unique letters.
         direction: the direction from which to start applying the cipher. Valid
