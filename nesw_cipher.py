@@ -126,7 +126,7 @@ def validate_rotation(rotation):
 
 
 def build_alphabet(keyword, replacement=REPLACEMENT):
-    """Build a square with the letters of the alphabet, replacing one letter
+    """Builds a square with the letters of the alphabet, replacing one letter
     with another so that it fits the square.
 
     Parameters:
