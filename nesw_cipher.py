@@ -200,9 +200,9 @@ def encipher(plaintext, keyword="", replacement=REPLACEMENT,
                    choices are any of the values in the 'DIRECTIONS' list.
         rotation: the number of rotation steps used to change direction after
                   each letter. Should be a non-zero integer with absolute value
-                  equal to or lower than half the size of the 'DIRECTIONS' list.
-                  Positive values are clockwise steps, negative values are
-                  widdershins steps.
+                  equal to or lower than half the size of the 'DIRECTIONS'
+                  list. Positive values are clockwise steps, negative values
+                  are widdershins steps.
 
     Returns:
         The resulting ciphertext.
