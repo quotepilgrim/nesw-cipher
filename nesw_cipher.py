@@ -53,10 +53,15 @@ def validate_keyword(keyword):
         ValueError: if keyword has characters which are not letters.
     """
 
+    valid = True
     for char in keyword:
         if char.lower() not in LETTERS:
-            raise ValueError("argument passed to 'keyword' must contain only "
-                             "letters")
+            valid = False
+            break
+
+    if not valid:
+        raise ValueError("argument passed to 'keyword' must contain only "
+                         "letters")
     return keyword
 
 
@@ -72,7 +77,6 @@ def validate_replacement(replacement):
         letters.
     """
     replacement = replacement.lower()
-
     valid = (len(replacement) == 2 and
              replacement[0] != replacement[1] and
              replacement[0] in LETTERS and
