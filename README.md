@@ -69,7 +69,7 @@ options:
                   ne, e, se, s, sw, w, nw (default: n)
   -s STEP_SIZE    change the size of the steps used for rotation; choose one
                   of 1, 2, 3, 4 (default: 2)
-  -w              use widdershins rotation to encipher message(default:
+  -w              use widdershins rotation to encipher message (default:
                   clockwise rotation)
 ```
 
