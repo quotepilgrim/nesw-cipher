@@ -85,13 +85,13 @@ def validate_replacement(replacement):
 
 
 def validate_direction(direction):
-    """Takes a direction and checks whether it is in the directions list.
+    """Takes a direction and checks whether it is in DIRECTIONS.
 
     Returns:
         direction if valid
 
     Raises:
-        ValueError: if direction is not in the directions list.
+        ValueError: if direction is not in DIRECTIONS.
     """
     if direction not in DIRECTIONS:
         raise ValueError("Parameter 'direction' expects argument to be a "
@@ -102,8 +102,8 @@ def validate_direction(direction):
 
 def validate_rotation(rotation):
     """Takes a number of rotation steps and checks whether it is a non-zero
-    integer within a range between a negative value equivalent to half the size
-    of DIRECTIONS up to the corresponding positive value.
+    integer with absolute value equal to or lower than half the size of
+    DIRECTIONS.
 
     Returns:
         rotation if valid
@@ -127,11 +127,12 @@ def validate_rotation(rotation):
 
 def build_alphabet(keyword, replacement=REPLACEMENT):
     """Builds a square with the letters of the alphabet, replacing one letter
-    with another so that it fits the square.
+    so that the alphabet can fit the square.
 
     Parameters:
         keyword: a keyword used to reorder the letters of the alphabet before
-                 building the square. replacement: a pair of unique letters.
+                 building the square.
+        replacement: a pair of unique letters.
 
     Returns:
         The resulting alphabet square as a 2d list.
@@ -197,12 +198,12 @@ def encipher(plaintext, keyword="", replacement=REPLACEMENT,
                      in the plaintext. A valid replacement consists of exactly
                      two unique letters.
         direction: the direction from which to start applying the cipher. Valid
-                   choices are any of the values in the 'DIRECTIONS' list.
+                   choices are any of the values in DIRECTIONS.
         rotation: the number of rotation steps used to change direction after
                   each letter. Should be a non-zero integer with absolute value
-                  equal to or lower than half the size of the 'DIRECTIONS'
-                  list. Positive values are clockwise steps, negative values
-                  are widdershins steps.
+                  equal to or lower than half the size of DIRECTIONS. Positive
+                  values are clockwise steps, negative values are widdershins
+                  steps.
 
     Returns:
         The resulting ciphertext.
