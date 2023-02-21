@@ -197,7 +197,7 @@ def encipher(plaintext, keyword="", replacement=REPLACEMENT,
                      in the plaintext. A valid replacement consists of exactly
                      two unique letters.
         direction: the direction from which to start applying the cipher. Valid
-                   choices are any of the values in the 'directions' list.
+                   choices are any of the values in the 'DIRECTIONS' list.
         rotation: the number of rotation steps used to change direction after
                   each letter. Can be any non-zero integer. Positive values are
                   clockwise steps, negative values are widdershins steps.
